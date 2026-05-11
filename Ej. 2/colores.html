@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascada CSS</title>
+    <style>
+        p { color: blue; }
+        p { color: green; }
+        .destacado { color: orange; }
+        #unico { color: red; }
+        
+    </style>
+</head>
+<body>
+    <p>¿De qué color soy?</p>
+    <p class="destacado">¿Y yo?</p>
+    <p class="destacado" id="unico">¿Y yo qué color tengo?</p>
+    <p class="destacado" id="unico" style="color: purple;">¿Y ahora?</p>
+</body>
+</html>
+<!--
+
+el primer color predicho era verde
+el segundo naranja
+el tercero rojo
+el ultimo violeta
+
+LUEGO DE VERIFICAR
+
+el primer color era verde
+el segundo era naranja 
+el tercero rojo 
+y el ultimo violeta
+
+
+-->

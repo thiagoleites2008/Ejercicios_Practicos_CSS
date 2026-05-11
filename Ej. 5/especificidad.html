@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Selector A */
+        p { background-color: yellow; }
+        
+        /* Selector B */
+        .info { background-color: lightblue; }
+        
+        /* Selector C */
+        p.info { background-color: lightgreen; }
+        
+        /* Selector D */
+        #mensaje { background-color: salmon; }
+        
+        /* Selector E */
+        div p.info { background-color: violet; }
+
+        /* 
+        Selector     Especificidad     Valor total
+        A: p      -      0-0-1      -      1
+        B: .info  -      0-1-0      -      10
+        C: p.info -      0-1-1      -      11
+        D: #mensaje -    1-0-0      -      100
+        E: div p.info -  0-1-2      -      12
+        
+
+        Gana #mensaje por tener mucho más valor que los otros selectores, por lo tanto el fondo del párrafo será salmon.
+        */
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p class="info" id="mensaje">
+            ¿De qué color es mi fondo?
+        </p>
+    </div>
+
+</body>
+</html>

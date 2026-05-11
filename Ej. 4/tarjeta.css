@@ -1,0 +1,22 @@
+.nombre{
+    font-family: "playfair display", serif;
+    font-size: 32px;
+    color: #2C3e50;
+}
+
+.titulo{
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+    color: rgb(52, 156, 219);
+}
+
+.contacto{
+    font-family: "roboto", sans-serif;
+    color: gray;
+}
+
+.tarjeta{
+    background-color: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+}
